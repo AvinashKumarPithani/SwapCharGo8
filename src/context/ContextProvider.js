@@ -1,8 +1,11 @@
-import { createContext, useContext, useReducer } from 'react';
-import reducer from './reducer';
+import { createContext, useContext, useReducer } from "react";
+import reducer from "./reducer";
 
 const initialState = {
   currentUser: null,
+  openLogin: false,
+  loading: false,
+  alert: { open: false, severity: "info", message: "" },
 };
 
 const Context = createContext(initialState);

@@ -14,12 +14,12 @@ const UserIcons = () => {
   return (
     <Box>
       <IconButton size="large" color="inherit">
-        <Badge color="error" badgeContent={7}>
+        <Badge color="error" badgeContent={5}>
           <Mail />
         </Badge>
       </IconButton>
       <IconButton size="large" color="inherit">
-        <Badge color="error" badgeContent={18}>
+        <Badge color="error" badgeContent={20}>
           <Notifications />
         </Badge>
       </IconButton>

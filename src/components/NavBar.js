@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   AppBar,
   Box,
@@ -7,13 +7,13 @@ import {
   IconButton,
   Toolbar,
   Typography,
-} from "@mui/material";
-import { Lock, Menu } from "@mui/icons-material";
-import photoURL from "../profile.jpg";
-import { useValue } from "../context/ContextProvider";
-import UserIcons from "./user/UserIcons";
+} from '@mui/material';
+import { Lock, Menu } from '@mui/icons-material';
+import photoURL from '../profile.jpeg';
+import { useValue } from '../context/ContextProvider';
+import UserIcons from './user/UserIcons';
 
-const user = { name: "test", photoURL };
+const user = { name: 'test', photoURL };
 
 const NavBar = () => {
   const {
@@ -34,7 +34,7 @@ const NavBar = () => {
             variant="h6"
             component="h1"
             noWrap
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}
           >
             You Are Welcome
           </Typography>
@@ -42,7 +42,7 @@ const NavBar = () => {
             variant="h6"
             component="h1"
             noWrap
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
             YRW
           </Typography>
@@ -50,7 +50,7 @@ const NavBar = () => {
             <Button
               color="inherit"
               startIcon={<Lock />}
-              onClick={() => dispatch({ type: "UPDATE_USER", payload: user })}
+              onClick={() => dispatch({ type: 'OPEN_LOGIN' })}
             >
               Login
             </Button>
